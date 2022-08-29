@@ -1,0 +1,11 @@
+framework module JumioDeviceRisk {
+  umbrella header "JumioDeviceRisk.h"
+
+  export *
+  module * { export * }
+}
+
+module JumioDeviceRisk.Swift {
+    header "JumioDeviceRisk-Swift.h"
+    requires objc
+}
