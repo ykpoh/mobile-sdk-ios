@@ -13,7 +13,9 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "Jumio",
-            targets: ["Jumio"]),
+            targets: [
+                "Jumio"
+            ]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -26,9 +28,6 @@ let package = Package(
 //            name: "LineFinder",
 //            path: "./Sources/JumioLineFinder/Jumio.xcframework"
 //        ),
-        .target(
-            name: "Jumio"
-        ),
         .binaryTarget(
             name: "Jumio",
             url: "https://repo.mobile.jumio.ai/com/jumio/ios/jumio-mobile-sdk/4.2.0/ios-jumio-mobile-sdk-4.2.0.zip",
